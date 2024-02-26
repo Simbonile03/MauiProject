@@ -1,0 +1,21 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="MauiProject.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Name" FontSize="Medium"/>
+        <Entry x:Name="nameEntry" Placeholder="Enter name"/>
+
+        <Label Text="Surname" FontSize="Medium"/>
+        <Entry x:Name="surnameEntry" Placeholder="Enter surname"/>
+
+        <Label Text="Email" FontSize="Medium"/>
+        <Entry x:Name="emailEntry" Placeholder="Enter email"/>
+
+        <Label Text="Bio" FontSize="Medium"/>
+        <Editor x:Name="bioEditor" Placeholder="Enter bio"/>
+
+        <Button Text="Save" Clicked="OnSaveClicked"/>
+    </StackLayout>
+</ContentPage>
